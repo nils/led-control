@@ -172,6 +172,8 @@ class AnimationController:
             'fract': utils.fract,
             'blackbody_to_rgb': driver.blackbody_to_rgb,
             'blackbody_correction_rgb': driver.blackbody_correction_rgb,
+            'min': min,
+            'max': max,
         }
         restricted_locals = {}
         arg_names = ['t', 'dt', 'x', 'y', 'prev_state']
