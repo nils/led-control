@@ -200,7 +200,7 @@ class AnimationController:
         c = [self.correction_original[0] * int(rgb[0] * 255) // 255,
              self.correction_original[1] * int(rgb[1] * 255) // 255,
              self.correction_original[2] * int(rgb[2] * 255) // 255]
-        self.correction = (c[0] << 16) | (c[1] << 8) | c[2]
+        self.correction = self.correction_original#(c[0] << 16) | (c[1] << 8) | c[2]
 
     def calculate_mappings(self):
         'Calculate and store spatial mapping values with current scale'
